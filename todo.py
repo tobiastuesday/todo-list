@@ -6,7 +6,7 @@ def enter_tasks():
 
 
 def store_tasks(tasks):
-    with open("tasks.txt", "w") as file:
+    with open("tasks.txt", "a") as file:
         for task in tasks:
             file.write(task + "\n")
 
