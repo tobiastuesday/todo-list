@@ -11,9 +11,9 @@ def enter_tasks():
 def store_tasks(tasks):
     current_date = datetime.now()
     with open("tasks.txt", "a") as file:
+        file.write(str(current_date) + "\n")
         for task in tasks:
             file.write(task + "\n")
-        file.write(str(current_date))
 
 
 # run program
